@@ -1,0 +1,71 @@
+.container
+  margin: 0
+
+html
+  background: $content-background-color
+
+body
+  font-size: 16px
+  line-height: 1.5
+
+
+
+header
+  background: $header-background-color
+  @include border-image("../images/styles/header-border.png", 0, 0, 8)
+
+  nav
+    background: #101429
+    text-align: center
+
+    li
+      display: inline
+
+
+      a
+        display: inline-block
+        padding: 12px 4px
+        color: $header-navigation-color
+        text:
+          decoration: none
+          transform: uppercase
+
+        &:visited
+          color: $header-navigation-color
+
+  hgroup
+    text-align: center
+
+    h1
+      height: 100px
+      margin: 10px 0
+      text-indent: -9999px
+      background: url(../images/styles/yegrb-short-logo.png) center center no-repeat
+
+    h2
+      display: none
+
+#content
+  min-height: 300px
+  padding: 0 10px
+
+  hgroup
+    margin-top: 1em
+    *
+      margin: 0
+
+  h2
+    font:
+      weight: lighter
+    line-height: 1.7
+
+    span
+      padding: 4px
+      color: $footer-text-color
+      background-color: $footer-background-color
+
+
+footer
+  min-height: 100px
+  background: $footer-background-color
+  color: $footer-text-color
